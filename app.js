@@ -13,8 +13,8 @@ const app = express();
 //Connect DB
 mongoose
   .connect('mongodb+srv://omermeric2010:0rpXEYYtLsXjwSJ6@cluster0.wa9yz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-    
-    
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
   })
   .then(() => {
     console.log('Connected to MongoDB');
