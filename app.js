@@ -12,7 +12,7 @@ const app = express();
 
 //Connect DB
 mongoose
-  .connect('mongodb+srv://dbUser:ex.dbUserPassword@cluster0.jdbe7.mongodb.net/', {
+  .connect('mongodb+srv://omermeric2010:0rpXEYYtLsXjwSJ6@cluster0.wa9yz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     
     
   })
@@ -34,7 +34,7 @@ app.use(
     secret: 'my_keyboard_cat',
     resave: false,
     saveUninitialized: true,
-    store: MongoStore.create({ mongoUrl: 'mongodb+srv://dbUser:ex.dbUserPassword@cluster0.jdbe7.mongodb.net/' }),
+    store: MongoStore.create({ mongoUrl: 'mongodb+srv://omermeric2010:0rpXEYYtLsXjwSJ6@cluster0.wa9yz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' }),
   }),
 );
 app.use(flash());
