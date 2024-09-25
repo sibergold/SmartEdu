@@ -12,9 +12,9 @@ const app = express();
 
 //Connect DB
 mongoose
-  .connect('mongodb+srv://dbUser:ex.dbUserPassword@cluster0.jdbe7.mongodb.net/?retryWrites=true&w=majority&appName=smartedu-db', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+  .connect('mongodb+srv://dbUser:ex.dbUserPassword@cluster0.jdbe7.mongodb.net/', {
+    
+    
   })
   .then(() => {
     console.log('Connected to MongoDB');
@@ -34,7 +34,7 @@ app.use(
     secret: 'my_keyboard_cat',
     resave: false,
     saveUninitialized: true,
-    store: MongoStore.create({ mongoUrl: 'mongodb://localhost/smartedu-db' }),
+    store: MongoStore.create({ mongoUrl: 'mongodb+srv://dbUser:ex.dbUserPassword@cluster0.jdbe7.mongodb.net/' }),
   }),
 );
 app.use(flash());
