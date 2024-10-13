@@ -34,7 +34,7 @@ app.use(
     secret: 'my_keyboard_cat',
     resave: false,
     saveUninitialized: true,
-    store: MongoStore.create({ mongoUrl: 'mongodb+srv://omermeric2010:0rpXEYYtLsXjwSJ6@cluster0.wa9yz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' }),
+    store: MongoStore.create({ mongoUrl: 'YOUR MONGODB CONNECTION' }),
   }),
 );
 app.use(flash());
